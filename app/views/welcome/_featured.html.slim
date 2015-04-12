@@ -1,0 +1,17 @@
+section#feat-project.gray-bg.padding-top
+  .container
+    header.section-header.text-center
+      h1.scrollimation.scale-in Mit seneste projekt
+      p
+        =link_to 'Deam.dk', 'http://deam.dk'
+        |  har til formål at inspirere dig, samt lade dig finde de besdste priser på boligindretnings produkter. Det gør vi ved ved at hente produkter fra en stor mængde danske webshops, og lade dig søge mellem dem.
+      p
+      | Blandt de teknologier der bruges kan nævnes; Machine learning, Elasticsearch, Redis etc..
+    .scrollimation.fade-up
+      img.img-responsive.img-center alt="" src="assets/chrome-top.png"
+      .img-wrapper
+        =image_tag 'deam.png', class: 'img img-responsive img-center'
+        p.text-center.on-hover
+          =link_to 'http://deam.dk', class: 'btn btn-meflat icon-right' do
+            | Gå til website
+            i.fa.fa-arrow-right

@@ -1,0 +1,19 @@
+section#contact.dark-bg.light-typo.padding-top
+  .container
+    header.section-header.text-center
+      h1.scrollimation.scale-in Skriv til mig
+      p Har du spørgsmål, eller brug for ekstra hænder på et projekt, er du velkommen til at kontakte mig.
+    form#contact-form.bl_form.text-center action="contact.php" method="post" novalidate=""
+      span.field-wrap.scrollimation.fade-right
+        label.control-label for="contact-name"  Navn
+        input#contact-name.label_better.requiredField data-error-empty=("*Enter your name") data-new-placeholder="Name" name="contactName" placeholder="Name" type="text" /
+      span.field-wrap.scrollimation.fade-in
+        label.control-label for="contact-mail"  Email
+        input#contact-mail.label_better.requiredField data-error-empty=("*Enter your email") data-error-invalid=("x Invalid email address") data-new-placeholder=("Email Address") name="email" placeholder=("Email Address") type="email" /
+      span.field-wrap.scrollimation.fade-left
+        label.control-label for="contact-message"  Besked
+        textarea#contact-message.label_better.requiredField data-error-empty=("*Enter your message") data-new-placeholder="Message" name="comments" placeholder="Message" rows="1"
+      p.text-center
+        button.btn.btn-meflat.icon-left data-error-message="Error!" data-ok-message=("Message Sent") data-sending-message="Sending..." name="submit" type="submit"
+          i.fa.fa-paper-plane Send besked
+      input#submitted name="submitted" type="hidden" value="true" /
