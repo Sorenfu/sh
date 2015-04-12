@@ -9,5 +9,6 @@ html lang="en"
     =csrf_meta_tags
   body
     =render 'navbar'
-    =yield
+    div class="#{controller_name}-wrapper #{controller.action_name}-wrapper"
+      =yield
     =render 'footer'
